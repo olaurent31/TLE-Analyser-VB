@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html
+        {
+            height: 100%;
+        }
+        body
+        {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map_canvas
+        {
+            height: 100%;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"> </script>
+
+    <script type="text/javascript">
+
+      var map;
+      var OrbPath;
+      var Polylines = []; // Groupe de Polylines
+      var Marker;
+      var SunMarker;
+      var Markers = []; //Groupe d'Icones
+      var orb = []; // Groupe de points constituant la polyline
+      var dayNightOverlay = null;
+
+      function Initialize(zoomLevel,lat,lng,type){
+      //Get the type of map to start.
+      //Need to convert the GoogleMapType enum
+      //to an actual Google Map Type
+      var MapType;
+      switch (type)
+      {
+      case 1:
+      MapType = google.maps.MapTypeId.ROADMAP;
+      break;
+      case 2:
+      MapType = google.maps.MapTypeId.TERRAIN;
+      break;
+      case 3:
+      MapType = google.maps.MapTypeId.HYBRID;
+      break;
+      case 4:
+      MapType = google.maps.MapTypeId.SATELLITE;
+      break;
+      default:
+      MapType = google.maps.MapTypeId.ROADMAP;
+      };
+
+      //Create an instance of the map with the lat, lng, zoom, and
+      //type passed in
+      var myLatlng = new google.maps.LatLng(lat,lng);
+      var myOptions = {zoom: zoomLevel,center: myLatlng,mapTypeId: MapType};
+      var MarkerSize = new google.maps.Size(48,48);
+
+      map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+      google.maps.event.addListener(map, 'click', Map_Click);
+      google.maps.event.addListener(map, 'mousemove', Map_MouseMove);
+      google.maps.event.addListener(map, 'idle', Map_Idle);
+      }
+
+      function Map_Click(e){
+      window.external.Map_Click(e.latLng.lat(),e.latLng.lng());
+      }
+
+      function Map_MouseMove(e){
+      window.external.Map_MouseMove(e.latLng.lat(),e.latLng.lng());
+      }
+
+      function Map_Idle(){
+      window.external.Map_Idle();
+      }
+
+      function DeleteMarkers() //Fonction non utilisée//
+      {
+      if (Markers){
+      for (i in Markers){
+      Markers[i].setMap(null);
+      google.maps.event.clearInstanceListeners(Markers[i]);
+      Markers[i] = null;
+      }
+      Markers.length = 0;
+      }
+      }
+
+      function AddMarker(name,lat,lng,stdmarker)
+      {
+      var MarkerLatLng;
+      var MarkerOption;
+
+      if(stdmarker == "False"){
+      var saticon = new google.maps.MarkerImage('http://www.loylart.com/tleanalyser/images/satellite.png',
+      new google.maps.Size(86,33),
+      new google.maps.Point(0,0),
+      new google.maps.Point(30,17));}
+
+      if (Marker){
+      var NewPoint = new google.maps.LatLng(lat, lng);
+      Marker.setPosition (NewPoint);
+      Marker.setIcon(saticon);
+      }
+      else{
+      MarkerLatLng = new google.maps.LatLng(lat, lng);
+      MarkerOption = {map:map,position:MarkerLatLng,title:name,icon:saticon};
+      Marker = new google.maps.Marker(MarkerOption);
+      google.maps.event.addListener(Marker, 'click', CenterMap);
+      Markers.push(Marker);
+      MarkerLatLng = null;
+      MarkerOption = null;
+      }
+      }
+
+      function InitOrb()
+      {
+      orb = [];
+      }
+
+      function CreateTrace(lati,longi)
+      {
+      orb.push(new google.maps.LatLng(lati,longi));
+      }
+
+      function DeleteTrace()
+      {
+      if (Polylines){
+      for (i in Polylines){
+      Polylines[i].setMap(null);
+      google.maps.event.clearInstanceListeners(Polylines[i]);
+      Polylines[i] = null;
+      }
+      Polylines.length = 0;
+      }
+      }
+
+      function AddTrace()
+      {
+      OrbPath = new google.maps.Polyline({
+      path: orb,
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2
+      });
+      Polylines.push(OrbPath);  // stockage dans le groupe de Polylines
+      OrbPath.setMap(map);
+      }
+
+      function CenterMap()
+      {
+      if (Markers){
+      for (i in Markers){
+      map.panTo(Markers[i].getPosition());
+      }
+      }
+      }
+
+      function SetInitialParameters()
+      {
+      map.setZoom(1);
+      map.panTo(new google.maps.LatLng(0,0));
+      }
+
+      function ZoomSat(zoom, lat, lng)
+      {
+      map.setZoom(zoom);
+      map.panTo(new google.maps.LatLng(lat,lng));
+      }
+
+      ////////////////SOLEIL///////////////////
+
+      function AddSunMarker(lat,lng)
+      {
+      var SunMarkerLatLng;
+      var SunMarkerOption;
+
+      var sunicon = new google.maps.MarkerImage('http://www.loylart.com/tleanalyser/images/sun.gif',
+      new google.maps.Size(22,22),
+      new google.maps.Point(0,0),
+      new google.maps.Point(11,11));
+
+      if (SunMarker){
+      var NewPoint = new google.maps.LatLng(lat, lng);
+      SunMarker.setPosition (NewPoint);
+      SunMarker.setIcon(sunicon);
+      }
+      else{
+      SunMarkerLatLng = new google.maps.LatLng(lat, lng);
+      SunMarkerOption = {map:map,position:SunMarkerLatLng,icon:sunicon};
+      SunMarker = new google.maps.Marker(SunMarkerOption);
+      Markers.push(SunMarker);
+      SunMarkerLatLng = null;
+      SunMarkerOption = null;
+      }
+      }
+
+      //function dayNightSun(lat,lng) // Non utilisé car trop grourmand en ressources
+      //{
+
+      //if (dayNightOverlay != null)
+      //{
+      //dayNightOverlay.setMap(null);
+      //}
+      //var centerLng = 180+lng;
+      //var centerLat = (-1)*lat;
+      //dayNightOverlay = new google.maps.Circle({
+      //center: new google.maps.LatLng(centerLat,centerLng),
+      //radius: 6375*3141.59265/2,
+      //strokeColor: "#DBDBDB",
+      //strokeOpacity: 0.2,
+      //strokeWeight: 1,
+      //fillOpacity: 0.5,
+      //map: map
+      //});
+      //}
+
+    </script>
+    
+</head>
+<body>
+    <div id="map_canvas" style="width: 100%; height: 100%">
+    </div>
+</body>
+</html>

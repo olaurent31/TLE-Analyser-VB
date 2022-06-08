@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" hint="target=earth">
+<Document>
+	<name>#SATNAME#</name>
+	<open>1</open>
+	<Snippet>Cochez ou décochez les cases selon ce que vous voulez afficher</Snippet>
+	<description><![CDATA[<table width="600" cellpadding="5" cellspacing="0">
+      <tr><td align="center">
+      <strong><p>Fichier généné par TLE ANALYSER</p></strong>
+      <a href="https://sourceforge.net/projects/tleanalyser/">Télécharger TLE ANALYSER sur SourceForge.net</a>
+      <p>Copyright © 2012 Olivier LAURENT<p>
+      </td></tr></table>]]>
+      </description>
+
+#LOOKAT#
+
+	<Style id="redLine">
+      		<LineStyle>
+        		<color>ff0000ff</color>
+			<width>2</width>
+      		</LineStyle>
+	</Style>
+	
+	<Style id="satellite2">
+		<IconStyle>
+			<scale>5</scale>
+			<Icon>
+	   			<href>satellite.png</href>
+			</Icon>	
+			
+		</IconStyle>
+	</Style>
+
+	
+	<Folder>
+		<name>Orbite</name>
+
+		<Snippet>Décochez "Complète" afin de voir l'orbite animée</Snippet>
+		<open>1</open>
+		<Folder>
+			<name>Animée</name>
+	      		<open>0</open>
+	      		<Placemark>
+				<styleUrl>#redLine</styleUrl>
+				<name>Date : Départ</name>
+	        		<LineString>
+	          			<tessellate>0</tessellate>
+		  			<altitudeMode>absolute</altitudeMode>
+	          			<coordinates> 
+
+</coordinates>
+</LineString>
+</Placemark>
+
+#ANIME#
+
+	      	</Folder>
+	      	
+	      	<Folder>
+	      		<name>Complète</name>
+	      		<open>0</open>
+	      		<Placemark>
+	      			<styleUrl>#redLine</styleUrl>
+	      			<name>Date : Départ</name>
+	      			<LineString>
+	      				<tessellate>0</tessellate>
+	      				<altitudeMode>absolute</altitudeMode>
+	      				<coordinates>
+
+#COORDINATES#
+
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+	</Folder>
+
+	<Folder>
+		<name>Satellite</name>
+		<open>0</open>
+
+#SATELLITE#
+
+	</Folder>	
+	
+</Document>
+</kml>

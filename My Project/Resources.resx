@@ -1,0 +1,1224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="carte1" xml:space="preserve">
+    <value>&amp;Ciel</value>
+    <comment>Barre d'outils</comment>
+  </data>
+  <data name="message_statut05" xml:space="preserve">
+    <value>Jour</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="dimension_sat3" xml:space="preserve">
+    <value>, R=</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="evenements13" xml:space="preserve">
+    <value>Passage à PSO =</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="lieux_observation2" xml:space="preserve">
+    <value>Ajouter à Mes préférés</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="message_statut11" xml:space="preserve">
+    <value>Fichier # créé</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="sauvegarde32" xml:space="preserve">
+    <value>Anomalie excentrique : #$$Périgée (Altitude) : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess10" xml:space="preserve">
+    <value>POSITION : Les deux lignes du TLE du satellite # ont des numéros NORAD différents (# et #)</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="message_statut16" xml:space="preserve">
+    <value>La nouvelle catégorie de lieux d'observation a été créée</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="sauvegarde31" xml:space="preserve">
+    <value>Anomalie vraie       : #$$Apogée  (Altitude) : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde28" xml:space="preserve">
+    <value>x : #$vx : #$Demi-grand axe : #$Ascension droite du noeud ascendant : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="conditions_observation1" xml:space="preserve">
+    <value>Jour</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="evenements15" xml:space="preserve">
+    <value>Temps écoulé : # #</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="coord_geo7" xml:space="preserve">
+    <value>Hauteur :</value>
+    <comment>Affichage des coordonnees</comment>
+  </data>
+  <data name="mess12" xml:space="preserve">
+    <value>IRIDIUM : Erreur rencontrée lors de l'exécution&amp;Aucun satellite Iridium susceptible de produire des flashs dans le fichier de statut</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="transit02" xml:space="preserve">
+    <value>Transits ISS</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="serveur4" xml:space="preserve">
+    <value>Télécharger...</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="serveur2" xml:space="preserve">
+    <value>Aucune mise à jour nécessaire</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="lieux_observation6" xml:space="preserve">
+    <value>Mes Préférés</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="prevision1" xml:space="preserve">
+    <value>PREVISION</value>
+    <comment>Calcul des previsions de passage</comment>
+  </data>
+  <data name="mess13" xml:space="preserve">
+    <value>IRIDIUM : Erreur rencontrée lors de l'exécution&amp;Aucun satellite Iridium n'a été trouvé dans le fichier TLE</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="affichage" xml:space="preserve">
+    <value>Astropedia (c) 2005-2011</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="evenements03" xml:space="preserve">
+    <value>Noeud Ascendant - PSO = 0°</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="phase_lune5" xml:space="preserve">
+    <value>Dernier quartier</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="dimension_sat1" xml:space="preserve">
+    <value>Sphérique. R=</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="sauvegarde12" xml:space="preserve">
+    <value>Hauteur    : #$Ascension droite :  #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="illumination_sat1" xml:space="preserve">
+    <value>Satellite non visible (Ombre)</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="message_statut18" xml:space="preserve">
+    <value>Terminé !</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="update03" xml:space="preserve">
+    <value>à lire</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="age_tle2" xml:space="preserve">
+    <value>Les éléments orbitaux sont plus vieux que # jour(s). Souhaitez-vous les mettre à jour?</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="unite_heure3" xml:space="preserve">
+    <value>s</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="mess28" xml:space="preserve">
+    <value>Le nom du lieu d'observation n'est pas spécifié</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="conditions_observation5" xml:space="preserve">
+    <value>Nuit</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="mess31" xml:space="preserve">
+    <value>Erreur dans la saisie de l'altitude</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="message_statut13" xml:space="preserve">
+    <value>Ouverture du fichier TLE...</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="conditions1" xml:space="preserve">
+    <value>Age du TLE                : # jours (au #)</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="phase_lune1" xml:space="preserve">
+    <value>Nouvelle Lune</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="modele2" xml:space="preserve">
+    <value>SGP4 (NE)</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="unite5" xml:space="preserve">
+    <value>UA</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="illumination_sat5" xml:space="preserve">
+    <value>Magnitude (Illumination) :</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="transit07" xml:space="preserve">
+    <value>Omb</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="serveur1" xml:space="preserve">
+    <value>Connexion au serveur impossible</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="dimension_sat2" xml:space="preserve">
+    <value>Cylindrique. L=</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="dimension_sat4" xml:space="preserve">
+    <value>Boîte.</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="evenements11" xml:space="preserve">
+    <value>Transition jour -&gt; nuit</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="mess25" xml:space="preserve">
+    <value># : Le nom du fichier TLE est incorrect</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="coord_geo2" xml:space="preserve">
+    <value>Ouest</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="transit08" xml:space="preserve">
+    <value>Pen</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="message_statut17" xml:space="preserve">
+    <value>Lieu d'observation déjà sélectionné</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="mess15" xml:space="preserve">
+    <value>MISE A JOUR : Le fichier # contient moins de satellites que le fichier #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="maximise1" xml:space="preserve">
+    <value>&amp;Agrandir</value>
+    <comment>Barre d'outils</comment>
+  </data>
+  <data name="conditions8" xml:space="preserve">
+    <value>Unité de distance         : #</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="serveur5" xml:space="preserve">
+    <value>Chargement en cours...</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="message_statut24" xml:space="preserve">
+    <value>Annulation du calcul des transits ISS</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="mess24" xml:space="preserve">
+    <value># : Le nom du fichier # n'est pas spécifié</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="sauvegarde15" xml:space="preserve">
+    <value>Coordonnées de la Lune :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess02" xml:space="preserve">
+    <value>POSITION : Erreur rencontrée lors de l'initialisation&amp;Le répertoire contenant les fichiers de lieux d'observation n'existe pas
+</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="update10" xml:space="preserve">
+    <value>Le groupe "#" existe déjà</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="sauvegarde09" xml:space="preserve">
+    <value>Vitesse orbitale   : #  $Conditions d'observation : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="direction2" xml:space="preserve">
+    <value>Descendant</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="mess19" xml:space="preserve">
+    <value>TRANSIT : L'âge du TLE de l'ISS (# jours) est supérieur à # jours</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="lieux_observation4" xml:space="preserve">
+    <value>Voulez-vous vraiment supprimer "#" de la catégorie "#"?</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="sauvegarde20" xml:space="preserve">
+    <value>Désignation COSPAR      : #$$n'/2                  : # rev/jour^2</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess09" xml:space="preserve">
+    <value>POSITION : Erreur Ponctuation du TLE :&amp;Satellite # - numéro NORAD : #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="evenements08" xml:space="preserve">
+    <value>Lumière -&gt; Pénombre</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="maximise2" xml:space="preserve">
+    <value>&amp;Réduire</value>
+    <comment>Barre d'outils</comment>
+  </data>
+  <data name="sauvegarde07" xml:space="preserve">
+    <value>Altitude  :  #$Distance   : #$Constellation    : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde33" xml:space="preserve">
+    <value>Champ de vue         : #$$Période orbitale   : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde30" xml:space="preserve">
+    <value>z : #$vz : #$Inclinaison    : #$Anomalie moyenne                    : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde11" xml:space="preserve">
+    <value>Coordonnées du Soleil :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="illumination_sat3" xml:space="preserve">
+    <value> (Pénombre)</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="transit05" xml:space="preserve">
+    <value>S</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="perigee" xml:space="preserve">
+    <value># (#)</value>
+    <comment>Elements osculateurs</comment>
+  </data>
+  <data name="evenements04" xml:space="preserve">
+    <value>Noeud Descendant - PSO = 180°</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="message_statut22" xml:space="preserve">
+    <value>Prévisions des flashs Iridium</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="message_statut02" xml:space="preserve">
+    <value>Temps réel</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="sauvegarde02" xml:space="preserve">
+    <value>Lieu d'observation :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="personnel1" xml:space="preserve">
+    <value>PERSONNEL</value>
+    <comment>Creation d'un fichier TLE personnel</comment>
+  </data>
+  <data name="filtre3" xml:space="preserve">
+    <value>Fichiers texte|*.txt|Fichiers TLE|*.tle|Fichiers gz|*.gz|Tous les fichiers|*.*</value>
+    <comment>Filtre de fichiers</comment>
+  </data>
+  <data name="coord_geo4" xml:space="preserve">
+    <value>Sud</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="filtre1" xml:space="preserve">
+    <value>Fichiers JPEG|*.jpg|Fichiers BMP|*.bmp|Tous les fichiers|*.*</value>
+    <comment>Filtre de fichiers</comment>
+  </data>
+  <data name="mess26" xml:space="preserve">
+    <value># : Erreur rencontrée lors du chargement du fichier&amp;Le fichier # n'est pas un TLE</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="transit01" xml:space="preserve">
+    <value>TRANSIT</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="serveur3" xml:space="preserve">
+    <value>La prise en compte des fichiers téléchargés nécessite un redémarrage de PreviSat</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="sauvegarde13" xml:space="preserve">
+    <value>Azimut (N) : #$Déclinaison      : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="iridium2" xml:space="preserve">
+    <value>TLE</value>
+    <comment>Calcul des flashs Iridium</comment>
+  </data>
+  <data name="message_statut09" xml:space="preserve">
+    <value>Soleil</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="lieux_observation1" xml:space="preserve">
+    <value>mes préférés</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="mess07" xml:space="preserve">
+    <value>POSITION : Les numéros de ligne du TLE du satellite # (numéro NORAD : # ) sont incorrects</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="message_statut10" xml:space="preserve">
+    <value>Lune</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="mess14" xml:space="preserve">
+    <value>MISE A JOUR : Erreur rencontrée lors du chargement du fichier&amp;Le fichier # n'est pas un TLE</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="update02" xml:space="preserve">
+    <value>à mettre à jour</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="message_statut15" xml:space="preserve">
+    <value>La catégorie "#" a été supprimée</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="mess20" xml:space="preserve">
+    <value># : Le fichier # n'existe pas</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess17" xml:space="preserve">
+    <value>EVENEMENTS : Aucun évènement sélectionné</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="sauvegarde25" xml:space="preserve">
+    <value>Excentricité            : #$$Modèle orbital        : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="message_statut03" xml:space="preserve">
+    <value>Mode manuel</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="transit10" xml:space="preserve">
+    <value>   Date      Heure    Azimut Sat Hauteur Sat  AD Sat    Decl Sat  Cst  Ang  Type Corps Ill   Alt   Dist  Az Soleil  Haut Soleil</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="mess23" xml:space="preserve">
+    <value># : Erreur rencontrée lors de la décompression du fichier #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="carte2" xml:space="preserve">
+    <value>&amp;Carte</value>
+    <comment>Barre d'outils</comment>
+  </data>
+  <data name="mess22" xml:space="preserve">
+    <value># : Aucun satellite n'est sélectionné dans la liste</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="unite_heure1" xml:space="preserve">
+    <value>h</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="phase_lune8" xml:space="preserve">
+    <value>Pleine lune</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="sauvegarde17" xml:space="preserve">
+    <value>Illumination :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess32" xml:space="preserve">
+    <value>Le lieu existe déjà dans la catégorie "#"</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="sauvegarde10" xml:space="preserve">
+    <value>Variation distance : #  $Orbite n°#</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="message_statut04" xml:space="preserve">
+    <value>Jour julien</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="conditions5" xml:space="preserve">
+    <value>Conditions d'observations : Hauteur minimale du satellite = #°</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="sauvegarde04" xml:space="preserve">
+    <value>Nom du satellite : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="coord_geo3" xml:space="preserve">
+    <value>Nord</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="illumination_sat6" xml:space="preserve">
+    <value>Satellite non visible</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="conditions6" xml:space="preserve">
+    <value>Conditions d'observations : Hauteur maximale du Soleil = #°</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="lieux_observation5" xml:space="preserve">
+    <value>Le lieu d'observation "#" a été supprimé de la catégorie "#"</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="conditions4" xml:space="preserve">
+    <value>Fuseau horaire            : # # #</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="unite2" xml:space="preserve">
+    <value>mi</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="illumination_sat2" xml:space="preserve">
+    <value>Illumination :</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="iridium4" xml:space="preserve">
+    <value>Ir     Date      Heure    Azimut Sat Hauteur Sat  AD Sat    Decl Sat  Cst Ang  Mir Magn   Alt   Dist  Az Soleil  Haut Soleil</value>
+    <comment>Calcul des flashs Iridium</comment>
+  </data>
+  <data name="age_tle1" xml:space="preserve">
+    <value>jours</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="filtre4" xml:space="preserve">
+    <value>Fichiers texte|*.txt|Tous les fichiers|*.*</value>
+    <comment>Filtre de fichiers</comment>
+  </data>
+  <data name="evenements06" xml:space="preserve">
+    <value>Ombre -&gt; Pénombre</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="sauvegarde21" xml:space="preserve">
+    <value>Epoque (UTC)            : #$n"/6                  : # rev/jour^3</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="fichier_aide" xml:space="preserve">
+    <value>Fichier d'aide de</value>
+    <comment>Fichier d'aide</comment>
+  </data>
+  <data name="coord_geo6" xml:space="preserve">
+    <value>Latitude :</value>
+    <comment>Affichage des coordonnees</comment>
+  </data>
+  <data name="apropos1" xml:space="preserve">
+    <value>À propos de #</value>
+    <comment>Boite de message A propos</comment>
+  </data>
+  <data name="sauvegarde08" xml:space="preserve">
+    <value>Direction          : #  $#</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="update06" xml:space="preserve">
+    <value>Mise à jour de tous les TLE effectuée (fichier de # satellite(s))</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="conditions2" xml:space="preserve">
+    <value>Age du TLE le plus récent : # jours (au #)&amp;Age du TLE le plus ancien : # jours</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="serveur6" xml:space="preserve">
+    <value>Chargement terminé !</value>
+    <comment>Connexion au serveur</comment>
+  </data>
+  <data name="evenements09" xml:space="preserve">
+    <value>Périgée :</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="update05" xml:space="preserve">
+    <value># TLE(s) sur # mis à jour</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="mess27" xml:space="preserve">
+    <value>Le lieu d'observation "#" fait déjà partie de "Mes Préférés"</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="titre3" xml:space="preserve">
+    <value>Avertissement</value>
+    <comment>Titre de la boite de message</comment>
+  </data>
+  <data name="lieux_observation3" xml:space="preserve">
+    <value>Le lieu d'observation "#" a été ajouté dans la catégorie "Mes préférés"</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="transit03" xml:space="preserve">
+    <value>T</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="evenements02" xml:space="preserve">
+    <value>Évènements orbitaux</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="transit09" xml:space="preserve">
+    <value>Lum</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="phase_lune4" xml:space="preserve">
+    <value>Premier quartier</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="personnel4" xml:space="preserve">
+    <value>Enregistrer fichier TLE personnel</value>
+    <comment>Creation d'un fichier TLE personnel</comment>
+  </data>
+  <data name="modele1" xml:space="preserve">
+    <value>SGP4 (DS)</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="unite1" xml:space="preserve">
+    <value>km</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="illumination_sat7" xml:space="preserve">
+    <value> : Pénombre</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="message_statut01" xml:space="preserve">
+    <value>Mise à jour automatique des TLE</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="message_statut19" xml:space="preserve">
+    <value>Calculs en cours. Veuillez patienter...</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="mess16" xml:space="preserve">
+    <value>PERSONNEL : Erreur rencontrée lors du chargement du fichier #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="sauvegarde24" xml:space="preserve">
+    <value>AD noeud ascendant      : #$$Magnitude std/max     : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess29" xml:space="preserve">
+    <value>Erreur dans la saisie de la longitude</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="conditions_observation4" xml:space="preserve">
+    <value>Crépuscule astronomique</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="sauvegarde23" xml:space="preserve">
+    <value>Inclinaison             : #$$Anomalie moyenne      : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="lieux_observation7" xml:space="preserve">
+    <value>* Défaut</value>
+    <comment>Lieux d'observation</comment>
+  </data>
+  <data name="echelle_temps" xml:space="preserve">
+    <value>UTC</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="message_statut12" xml:space="preserve">
+    <value>Fichier # augmenté de nouveaux satellites</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="iridium1" xml:space="preserve">
+    <value>IRIDIUM</value>
+    <comment>Calcul des flashs Iridium</comment>
+  </data>
+  <data name="filtre2" xml:space="preserve">
+    <value>Fichiers texte|*.txt|Fichiers TLE|*.tle|Tous les fichiers|*.*</value>
+    <comment>Filtre de fichiers</comment>
+  </data>
+  <data name="update07" xml:space="preserve">
+    <value>Aucun TLE mis à jour</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="mess33" xml:space="preserve">
+    <value>Le nom de la catégorie n'est pas spécifié</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="direction1" xml:space="preserve">
+    <value>Ascendant</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="mess34" xml:space="preserve">
+    <value>La catégorie spécifiée existe déjà</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess11" xml:space="preserve">
+    <value>POSITION : Erreur CheckSum ligne # :&amp;Satellite # - numéro NORAD : #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess01" xml:space="preserve">
+    <value>POSITION : Le fichier # n'existe pas, veuillez réinstaller PreviSat</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="position2" xml:space="preserve">
+    <value>POSITION : Erreur rencontrée lors de l'initialisation&amp;Le répertoire # n'existe pas, veuillez réinstaller PreviSat</value>
+    <comment>Message sur la position</comment>
+  </data>
+  <data name="sauvegarde05" xml:space="preserve">
+    <value>Longitude : #$Hauteur    : #$Ascension droite :  #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde27" xml:space="preserve">
+    <value>Vecteur d'état (ECI) :$$$$Éléments osculateurs :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="conditions7" xml:space="preserve">
+    <value>Hauteur minimale du satellite = #°</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="mess35" xml:space="preserve">
+    <value>Voulez-vous vraiment supprimer la catégorie "#" ?</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="prevision2" xml:space="preserve">
+    <value>Prévisions de passage des satellites</value>
+    <comment>Calcul des previsions de passage</comment>
+  </data>
+  <data name="position1" xml:space="preserve">
+    <value>POSITION</value>
+    <comment>Message sur la position</comment>
+  </data>
+  <data name="update12" xml:space="preserve">
+    <value>Le nom du groupe n'est pas spécifié</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="evenements07" xml:space="preserve">
+    <value>Pénombre -&gt; Lumière</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="message_statut20" xml:space="preserve">
+    <value>Annulation du calcul des prévisions de passage</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="evenements14" xml:space="preserve">
+    <value>   Date     Heure      PSO    Longitude  Latitude  Évènements</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="phase_lune6" xml:space="preserve">
+    <value>Gibbeuse croissante</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="sauvegarde06" xml:space="preserve">
+    <value>Latitude  :  #$Azimut (N) : #$Déclinaison      : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="personnel3" xml:space="preserve">
+    <value>personnel</value>
+    <comment>Creation d'un fichier TLE personnel</comment>
+  </data>
+  <data name="sauvegarde01" xml:space="preserve">
+    <value>Date :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="apropos3" xml:space="preserve">
+    <value>PreviSat est un logiciel de calcul de la position des satellites artificiels.&amp;Il permet d'afficher la position des satellites à tout instant (en temps réel ou en mode manuel), d'effectuer les prévisions de passage pour n'importe quel lieu d'observation, et également de déterminer très rapidement les flashs Iridium.&amp;&amp;PreviSat est entièrement gratuit!</value>
+    <comment>Boite de message A propos</comment>
+  </data>
+  <data name="conditions3" xml:space="preserve">
+    <value>Lieu d'observation        : #     #°#'#" #   #°#'#" #   #</value>
+    <comment>Conditions pour le calcul des previsions</comment>
+  </data>
+  <data name="update04" xml:space="preserve">
+    <value>TLE du satellite # (#) non réactualisé</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="dimension_sat5" xml:space="preserve">
+    <value>Inconnues</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="sauvegarde26" xml:space="preserve">
+    <value>Argument du périgée     : #$$Dimensions/Section    : #^2</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="personnel2" xml:space="preserve">
+    <value>à lire</value>
+    <comment>Creation d'un fichier TLE personnel</comment>
+  </data>
+  <data name="conditions_observation2" xml:space="preserve">
+    <value>Crépuscule civil</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="unite7" xml:space="preserve">
+    <value>ft</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="titre2" xml:space="preserve">
+    <value>Erreur</value>
+    <comment>Titre de la boite de message</comment>
+  </data>
+  <data name="personnel5" xml:space="preserve">
+    <value>Fichier # écrit</value>
+    <comment>Creation d'un fichier TLE personnel</comment>
+  </data>
+  <data name="sauvegarde19" xml:space="preserve">
+    <value>Numéro NORAD            : #$$$Moyen mouvement       : # rev/jour</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="evenements12" xml:space="preserve">
+    <value>Transition nuit -&gt; jour</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="update01" xml:space="preserve">
+    <value>MISE A JOUR</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="message_statut06" xml:space="preserve">
+    <value>Date</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="phase_lune2" xml:space="preserve">
+    <value>Premier croissant</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="update09" xml:space="preserve">
+    <value>Voulez-vous vraiment supprimer ce(s) fichier(s) de la catégorie "#" ?</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="coord_geo8" xml:space="preserve">
+    <value>Azimut :</value>
+    <comment>Affichage des coordonnees</comment>
+  </data>
+  <data name="mess03" xml:space="preserve">
+    <value>POSITION : Erreur rencontrée lors de l'initialisation&amp;Il n'existe aucun fichier de lieux d'observation</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="transit04" xml:space="preserve">
+    <value>C</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="evenements05" xml:space="preserve">
+    <value>Pénombre -&gt; Ombre</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="mess08" xml:space="preserve">
+    <value>POSITION : Erreur position des espaces du TLE :&amp;Satellite # - numéro NORAD : #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess06" xml:space="preserve">
+    <value>POSITION : La longueur des lignes du TLE du satellite # (numéro NORAD : #) est incorrecte</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TAUM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\taum.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sauvegarde22" xml:space="preserve">
+    <value>Coeff pseudo-balistique : #  (1/Re) $Nb orbites à l'époque : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="sauvegarde16" xml:space="preserve">
+    <value>Phase        :</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="mess30" xml:space="preserve">
+    <value>Erreur dans la saisie de la latitude</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess04" xml:space="preserve">
+    <value>POSITION : Erreur rencontrée lors de l'exécution&amp;La position du satellite # (numéro NORAD : #) ne peut pas être calculée (altitude négative)</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess21" xml:space="preserve">
+    <value># : Problème de droits d'écriture du fichier #</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="mess18" xml:space="preserve">
+    <value>TRANSIT : Erreur rencontrée lors du chargement du fichier&amp;Le fichier # ne contient pas le TLE de l'ISS</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="message_statut23" xml:space="preserve">
+    <value>Annulation du calcul des évènements orbitaux</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="ouvrir_tle" xml:space="preserve">
+    <value>Ouvrir fichier TLE</value>
+    <comment>Ouverture d'un fichier TLE</comment>
+  </data>
+  <data name="coord_geo1" xml:space="preserve">
+    <value>Est</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="mess05" xml:space="preserve">
+    <value>POSITION : Le fichier # ne contient aucun satellite ou n'est pas valide</value>
+    <comment>Messages d'erreur ou d'avertissement</comment>
+  </data>
+  <data name="message_statut07" xml:space="preserve">
+    <value>Heure</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="sauvegarde29" xml:space="preserve">
+    <value>y : #$vy : #$Excentricité   : #$Argument du périgée                 : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="iridium3" xml:space="preserve">
+    <value>ADG</value>
+    <comment>Calcul des flashs Iridium</comment>
+  </data>
+  <data name="message_statut08" xml:space="preserve">
+    <value>numéro NORAD :</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="prevision3" xml:space="preserve">
+    <value>   Date     Heure    Azimut Sat Hauteur Sat  AD Sat    Decl Sat  Const Magn  Altitude  Distance  Az Soleil   Haut Soleil</value>
+    <comment>Calcul des previsions de passage</comment>
+  </data>
+  <data name="titre1" xml:space="preserve">
+    <value>Information</value>
+    <comment>Titre de la boite de message</comment>
+  </data>
+  <data name="message_statut14" xml:space="preserve">
+    <value>Fichier TLE OK : # satellites</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="unite6" xml:space="preserve">
+    <value>m</value>
+    <comment>Onglet Informations</comment>
+  </data>
+  <data name="sauvegarde03" xml:space="preserve">
+    <value>Longitude : #   Latitude : #   Altitude : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="evenements01" xml:space="preserve">
+    <value>EVENEMENTS</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="phase_lune7" xml:space="preserve">
+    <value>Gibbeuse décroissante</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="coord_geo5" xml:space="preserve">
+    <value>Longitude :</value>
+    <comment>Affichage des coordonnees</comment>
+  </data>
+  <data name="apropos2" xml:space="preserve">
+    <value>Version #    (26 octobre 2011)</value>
+    <comment>Boite de message A propos</comment>
+  </data>
+  <data name="README" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\README.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="update11" xml:space="preserve">
+    <value>Le nom du domaine n'est pas spécifié</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="message_statut21" xml:space="preserve">
+    <value>Annulation du calcul des flashs Iridium</value>
+    <comment>Message dans la barre de statut</comment>
+  </data>
+  <data name="transit06" xml:space="preserve">
+    <value>L</value>
+    <comment>Calcul des transits de l'ISS</comment>
+  </data>
+  <data name="unite3" xml:space="preserve">
+    <value>km/s</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="unite_heure2" xml:space="preserve">
+    <value>m</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="unite4" xml:space="preserve">
+    <value>mi/s</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="sauvegarde14" xml:space="preserve">
+    <value>Distance   : #   $Constellation    : #</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="illumination_sat4" xml:space="preserve">
+    <value>Magnitude : Non Visible (Ombre)</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="conditions_observation3" xml:space="preserve">
+    <value>Crépuscule nautique</value>
+    <comment>Onglet General</comment>
+  </data>
+  <data name="evenements10" xml:space="preserve">
+    <value>Apogée :</value>
+    <comment>Calcul des evenements orbitaux</comment>
+  </data>
+  <data name="update08" xml:space="preserve">
+    <value>Mise à jour de la catégorie effectuée</value>
+    <comment>Mise a jour des TLE</comment>
+  </data>
+  <data name="phase_lune3" xml:space="preserve">
+    <value>Dernier croissant</value>
+    <comment>Phases de la Lune</comment>
+  </data>
+  <data name="sauvegarde18" xml:space="preserve">
+    <value>SAUVEGARDE</value>
+    <comment>Sauvegarde des donnees dans un fichier texte</comment>
+  </data>
+  <data name="IRID_OR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\celestia\textures\medres\irid_or;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="satellite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\celestia\models\satellite.3ds;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SAT_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\celestia\textures\medres\sat_01;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SAT_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\celestia\textures\medres\sat_03;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SAT_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\celestia\textures\medres\sat_04;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="satellite_KML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\googleearth\satellite_kml.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="satellite_PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoogleEarth\satellite_PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TemplateKML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoogleEarth\TemplateKML.kml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ICSharpCode_SharpZipLib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dll\ICSharpCode.SharpZipLib.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GoogleEarth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoogleEarth\GoogleEarth.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="tlea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tlea.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="amateur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\amateur.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="cubesat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\cubesat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="dmc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\dmc.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="education" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\education.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="engineering" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\engineering.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="galileo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\galileo.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="geo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\geo.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="geodetic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\geodetic.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="globalstar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\globalstar.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="glo_ops" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\glo-ops.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="goes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\goes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="gorizont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\gorizont.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="gps_ops" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\gps-ops.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="intelsat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\intelsat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="iridium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\iridium.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="military" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\military.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="molniya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\molniya.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="musson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\musson.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="nnss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\nnss.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="noaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\noaa.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="orbcomm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\orbcomm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="other" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\other.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="other_comm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\other-comm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="radar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\radar.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="raduga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\raduga.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="resource" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\resource.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="sarsat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\sarsat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="sbas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\sbas.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="science" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\science.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="stations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\stations.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="tdrss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\tdrss.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TLEList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\TLEList.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="tle_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\tle-new.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="visual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\visual.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="weather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\weather.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="x_comm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tle\x-comm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TLEA_ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\icones\tlea_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\sat.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\sat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\sun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gmico1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images\gmico1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gmico2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images\gmico2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoogleMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\googlemap\googlemap.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EarthMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\earthmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EarthMap2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\earthmap2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

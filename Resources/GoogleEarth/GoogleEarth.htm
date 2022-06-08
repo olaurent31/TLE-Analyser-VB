@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript">
+      google.load("earth", "1");
+
+      var ge = null;
+      var placemark;
+      var lineStringPlacemark;
+      var lineString;
+      var multGeoPlacemark;
+      var geoms;
+
+      function init() {
+      google.earth.createInstance("map3d", initCB, failureCB);
+      }
+
+      function initCB(object) {
+      ge = object;
+      ge.getWindow().setVisibility(true);
+      updateOptions();
+      }
+
+      function failureCB(object) {
+      /***
+      * This function will be called if plugin fails to load, in case
+      * you need to handle that error condition.
+      ***/
+
+      document.write('<H1>Please install Google Earth Plugin.</H1>');
+      }
+
+      function updateOptions() {
+      var options = ge.getOptions();
+      options.setStatusBarVisibility(true);
+      options.setGridVisibility(false);
+      options.setOverviewMapVisibility(false);
+      options.setScaleLegendVisibility(false);
+      options.setAtmosphereVisibility(true);
+      options.setMouseNavigationEnabled(true);
+      options.setFadeInOutEnabled(true);
+
+      ge.getNavigationControl().setVisibility(ge.VISIBILITY_HIDE);
+
+      //Time Options
+      ge.getTime().getControl().setVisibility(ge.VISIBILITY_HIDE);
+      ge.getSun().setVisibility(true);
+
+      // add some layers
+      ge.getLayerRoot().enableLayerById(ge.LAYER_BORDERS, false);
+      ge.getLayerRoot().enableLayerById(ge.LAYER_ROADS, false);
+      }
+
+      function makeCircle(radius, x, y, lat, lng) {
+      var center = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
+      var ring = ge.createLinearRing('');
+      var steps = 25;
+      var pi2 = Math.PI * 2;
+      for (var i = 0; i < steps; i++) {
+      var lat1 = lat + x + radius * Math.cos(i / steps * pi2);
+      var lng1 = lng + y + radius * Math.sin(i / steps * pi2);
+      ring.getCoordinates().pushLatLngAlt(lat1, lng1, 0);
+      }
+      return ring;
+      }
+
+      function deleteSat()
+      {
+      // remove old placemarks
+      if (placemark)
+      ge.getFeatures().removeChild(placemark);
+      if (globePlacemark)
+      ge.getFeatures().removeChild(globePlacemark);
+      if (terrainPlacemark)
+      ge.getFeatures().removeChild(terrainPlacemark);
+      if (buildingsPlacemark)
+      ge.getFeatures().removeChild(buildingsPlacemark);
+      }
+
+      function addSat(sat,lati,longi,alti,epoch)
+      {
+      if (placemark){
+      var NewPoint = placemark.getGeometry();
+      NewPoint.setLatitude(lati);
+      NewPoint.setLongitude(longi);
+      NewPoint.setAltitude(alti);
+      placemark.setGeometry(NewPoint);
+      placemark.setName(sat);
+      ge.getFeatures().appendChild(placemark);
+      }
+      else{
+      // create the placemark
+      placemark = ge.createPlacemark('');
+      placemark.setName(sat);
+
+      var point = ge.createPoint('');
+      point.setLatitude(lati);
+      point.setLongitude(longi);
+      point.setAltitudeMode(ge.ALTITUDE_ABSOLUTE);
+      point.setAltitude(alti);
+      placemark.setGeometry(point);
+
+      // add the placemark to the earth DOM
+      ge.getFeatures().appendChild(placemark);
+
+      // Create style map for placemark
+      var icon = ge.createIcon('');
+      icon.setHref('http://i17.servimg.com/u/f17/17/86/95/43/satell10.png');
+      var style = ge.createStyle('');
+      style.getIconStyle().setIcon(icon);
+      style.getIconStyle().setScale(1.0);
+      placemark.setStyleSelector(style);
+      }
+
+      AddLineToEarth(lati,longi,alti);
+      SetTime(epoch);
+      }
+
+      //Fonctions pour la création de l'orbite
+      function InitOrb()
+      {
+      // Create the placemarks.
+      lineStringPlacemark = ge.createPlacemark('');
+      lineStringPlacemarkG = ge.createPlacemark('');
+
+      // Create the Orbit LineString
+      // and set the altitude mode.
+      lineString = ge.createLineString('');
+      lineStringPlacemark.setGeometry(lineString);
+      lineString.setExtrude(false);
+      lineString.setAltitudeMode(ge.ALTITUDE_ABSOLUTE);
+
+      // Create the Ground LineString
+      // and set the altitude mode.
+      lineStringG = ge.createLineString('');
+      lineStringPlacemarkG.setGeometry(lineStringG);
+      lineStringG.setExtrude(false);
+      lineStringG.setAltitudeMode(ge.CLAMP_TO_GROUND);
+      }
+
+      function DeleteTrace()
+      {
+      var c = ge.getFeatures().getFirstChild();
+      while (c) {
+      var s = c.getNextSibling();
+      ge.getFeatures().removeChild(c);
+      c = s;
+      }
+      }
+
+      function CreateTrace(lati,longi,alti)
+      {
+      lineString.getCoordinates().pushLatLngAlt(lati,longi,alti);
+      }
+
+      function AddTrace()
+      {
+      // Orbit Track
+      lineStringPlacemark.setStyleSelector(ge.createStyle(''));
+      var lineStyle = lineStringPlacemark.getStyleSelector().getLineStyle();
+      lineStyle.setWidth('4');
+      lineStyle.getColor().set('990000ff');
+
+      // Ground Track
+      lineStringPlacemarkG.setStyleSelector(ge.createStyle(''));
+      var lineStyleG = lineStringPlacemarkG.getStyleSelector().getLineStyle();
+      lineStyleG.setWidth('2');
+      lineStyleG.getColor().set('990000ff');
+
+      // Add the feature to Earth
+      ge.getFeatures().appendChild(lineStringPlacemark);
+      //ge.getFeatures().appendChild(lineStringPlacemarkG); //Option Ground Track
+      }
+
+      function AddLineToEarth(lati,longi,alti)
+      {
+      lineStringToEarth = ge.createPlacemark('');
+
+      // Create the LineString
+      // and set the altitude mode.
+      lineString = ge.createLineString('');
+      lineStringToEarth.setGeometry(lineString);
+      lineString.setExtrude(false);
+      lineString.setAltitudeMode(ge.ALTITUDE_ABSOLUTE);
+
+      lineString.getCoordinates().pushLatLngAlt(lati,longi,alti);
+      lineString.getCoordinates().pushLatLngAlt(lati,longi,0);
+
+      // Create a style and set width and color of line.
+      lineStringToEarth.setStyleSelector(ge.createStyle(''));
+      var lineStyle = lineStringToEarth.getStyleSelector().getLineStyle();
+      lineStyle.setWidth('2');
+      lineStyle.getColor().set('9900ffff');
+
+      // Add the feature to Earth
+      ge.getFeatures().appendChild(lineStringToEarth);
+        
+      // Add Placemark on Ground
+      multGeoPlacemark = ge.createPlacemark('');
+      multGeoPlacemark.setGeometry(ge.createMultiGeometry(''));
+      geoms = multGeoPlacemark.getGeometry().getGeometries();
+      geoms.appendChild(makeCircle(.005, 0, 0, lati, longi));
+      ge.getFeatures().appendChild(multGeoPlacemark);
+      }
+
+      function SetTime(epoch)
+      {
+      var timeStamp = ge.createTimeStamp('');
+      timeStamp.getWhen().set(epoch);
+
+      ge.getTime().setTimePrimitive(timeStamp);
+      }
+
+      function GoToSat(lati,longi,alti,tilt, heading)
+      {
+      // look at
+      var viewAlt = alti; // + 2000;
+      var la = ge.createLookAt('');
+      la.set(lati, longi,
+      alti, // altitude
+      ge.ALTITUDE_RELATIVE_TO_GROUND,
+      heading, // heading
+      tilt, // straight-down tilt
+      viewAlt // range (inverse of zoom)
+      );
+      ge.getView().setAbstractView(la);
+      }
+
+      function InitialView(lati,longi,alti,altiview)
+      {
+      // look at
+      var la = ge.createLookAt('');
+      la.set(lati, longi,
+      alti, // altitude
+      ge.ALTITUDE_RELATIVE_TO_GROUND,
+      0, // heading
+      0, // straight-down tilt
+      altiview // range (inverse of zoom)
+      );
+      ge.getView().setAbstractView(la);
+      }
+
+      function EarthGrid(status)
+      {
+      ge.getOptions().setGridVisibility(status);
+      }
+
+      function Borders(status)
+      {
+      ge.getLayerRoot().enableLayerById(ge.LAYER_BORDERS, status);
+      }
+
+      function Sun(status,epoch)
+      {
+      ge.getSun().setVisibility(status);
+      SetTime(epoch);
+      }
+
+      function Navigation(status)
+      {
+      if (status == true) {
+      ge.getNavigationControl().setVisibility(ge.VISIBILITY_SHOW);}
+      else{
+      ge.getNavigationControl().setVisibility(ge.VISIBILITY_HIDE);}
+      }
+
+    </script>
+  </head>
+
+  <body onload='init()'>
+    <div id='map3d' style='height: 100%; width: 100%'></div>
+  </body>
+</html>
